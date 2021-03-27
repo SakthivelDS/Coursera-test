@@ -1,6 +1,7 @@
 body p:hover {
 	font-style:italic;
 	font-weight: bold;
+	
 	cursor: pointer;
 	text-decoration: underline; 
 }

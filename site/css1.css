@@ -1,0 +1,123 @@
+h2 {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.container {
+	background:white;
+	width:100%;
+	height: 220px;
+	box-sizing: border-box;
+
+}
+.container ul {
+	margin: 0px;
+	padding: 0px;
+
+}
+.container ul li {
+
+	padding-bottom: 10px;
+	overflow:hidden;
+	font-size: 130%;
+	box-sizing: border-box;
+	list-style: none;
+	background-color: grey;
+	float:left;
+	width:31.5%;
+	height:200px;
+	margin: 15px;
+	border: 2px solid black;
+
+}
+.container ul li .box1{
+	font-weight: bold;
+		background-color: #f28d79;
+		width: 150px;
+		text-align: center;
+		float: right;
+		border-top: 1px solid black;
+		border-right:  1px solid black;
+		border-bottom: 2px solid black;
+		border-left:  2px solid black;
+}
+
+.container ul li .box2{
+	font-weight: bold;
+		background-color: #a31b00;
+		width: 150px;
+		text-align: center;
+		float: right;
+		border-top: 1px solid black;
+		border-right:  1px solid black;
+		border-bottom: 2px solid black;
+		border-left:  2px solid black;
+}
+
+.container ul li .box3{
+	font-weight: bold;
+		background-color: #f5e064;
+		width: 150px;
+		text-align: center;
+		float: right;
+		border-top: 1px solid black;
+		border-right:  1px solid black;
+		border-bottom: 2px solid black;
+		border-left:  2px solid black;
+}
+
+#downappr {
+	box-sizing: border-box;
+	font-size: 80%;
+	clear: right;
+	padding: 10px;
+}
+
+@media (min-width: 992px) {
+	.container ul li {
+		width: 31%;
+		margin: 10px;
+		float: left;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.container ul li:nth-child(3) {
+		width:98%;
+		margin: 10px;
+		float: left;
+
+	}
+	.container ul li:nth-child(2){
+
+		width:47%;
+		margin:10px;
+		margin-bottom: 15px;
+		float: right;
+	}
+	.container ul li:nth-child(1){
+		width:47%;
+		margin:10px;
+		margin-bottom: 15px;
+		float: left;
+	}
+	h2 {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 767px) {
+	h2 {
+		font-size: 2em;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.container ul li {
+		width: 95%;
+		float: left;
+		margin: 10px;
+
+	}
+}
