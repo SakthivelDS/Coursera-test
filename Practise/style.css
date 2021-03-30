@@ -180,8 +180,9 @@ body {
 .last2 {
 	box-sizing: border-box;
 	width:35%;
-	color: blue;
-	border: 1px solid blue;
+	color: #b2e5eb;
+	background-color: blue;
+	
 	float: left;
 	height: 50px;
 	padding-top: 15px;
@@ -196,7 +197,7 @@ body {
 
 }
 .last2:hover {
-	border: 0px;
+	padding-top: 14px;
 	background-color: #5c92ff;
 	color: white;
 
