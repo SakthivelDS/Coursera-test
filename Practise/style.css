@@ -204,7 +204,7 @@ body {
 }
 
 @media (min-width:768px ) and (max-width: 992px) {
-	.head1-md {
+	.head1-sd {
 		display: none;
 	}
 	.head1{
@@ -232,7 +232,7 @@ body {
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
-	.head1-md {
+	.head1-sd {
 		display: none;
 	}
 	.button1 {
@@ -302,7 +302,7 @@ body {
 
 }
 @media (min-width: 375px) and (max-width: 424px){
-	.head1-md {
+	.head1-sd {
 		display: none;
 	}
 	.button1 {
