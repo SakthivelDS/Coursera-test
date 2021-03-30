@@ -1,0 +1,114 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#navbar {
+	width: 100%;
+	background-color: white;
+	box-shadow: 0px 5px 5px #afc4be;
+	height: 80px;
+	margin: 0px;
+}
+
+#bg {
+	
+	margin-bottom: 0px;
+	margin-top: 2px;
+	width: 100%;
+	height: 575px;
+	padding-top: 0px;
+	overflow: hidden;
+	position: relative;
+	background-color: blue;
+
+}
+
+.bg-img {
+	width: 100%;
+	height: 575px;
+	padding:0px;
+	margin: 0px;
+	position: relative;
+}
+
+.button1 {
+	
+	position: relative;
+	text-align: center;
+	padding-top: 2px;
+	width: 150px;
+	height: 25px;
+	border-radius: 6px;
+	margin-top: 20px;
+	background-color:white;
+	float: left;
+	border: 1.2px solid black;
+	display: block;
+	margin-left: 15px;
+	box-shadow: 0px 1px 2px #cfd4d2;
+	font-size: .95em;
+
+}
+
+.logo-bg {
+	width: 500px;
+	background-color: white;
+	
+	
+	background-repeat: no-repeat;
+	height: 60px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	
+
+}
+.logo {
+	width: 50%;
+	height: 70px;
+	margin-left: 0px;
+	
+	
+}
+
+
+
+.button3-bg {
+	float: right;
+	width: 100px;
+	background-color: white;
+	text-align: center;
+	color: blue;
+	position: relative;
+
+	margin-top: -40px;
+	font-size: .95em;
+}
+
+.button2-bg {
+	float: right;
+	width: 105px;
+	background-color: white;
+	text-align: center;
+	color: blue;
+	margin-top:-40px; 
+	position: absolute;
+	right: 100px;
+	font-size: .95em;
+}
+
+.head1 {
+	text-align: center;
+	font-size: 1.2em;
+	color: maroon;
+	text-shadow: .5px;s
+	width:500px;
+	position: absolute;
+	top: 350px;
+	left:20px;
+
+}
