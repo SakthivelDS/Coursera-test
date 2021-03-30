@@ -202,7 +202,11 @@ body {
 
 
 }
-
+@media (min-width: 993px) {
+	.head1-sd {
+		display: none;
+	}
+}
 @media (min-width:768px ) and (max-width: 992px) {
 	.head1-sd {
 		display: none;
