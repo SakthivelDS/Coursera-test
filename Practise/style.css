@@ -137,14 +137,14 @@ body {
 	width:500px;
 	position: absolute;
 	
-	top: 330px;
+	top: 200px;
 	left:50px;
 
 }
 
 .head2 {
 	position: absolute;
-	top:500px;
+	top:350px;
 	font-family:  'Oxygen', sans-serif;
 	font-size: 1.5em;
 	width: 500px;
@@ -167,7 +167,7 @@ body {
 
 .last1 {
 	box-sizing: border-box;
-	width:35%;
+	width:40%;
 	color: #b2e5eb;
 	background-color: blue;
 	float: left;
@@ -200,5 +200,258 @@ body {
 	background-color: #5c92ff;
 	color: white;
 
+
+}
+
+@media (min-width:768px ) and (max-width: 992px) {
+	.head1-md {
+		display: none;
+	}
+	.head1{
+		font-size: 1em;
+		left: -20px;
+	}
+	.head2 {
+		font-size: 1.3em;
+		left:-40px;
+		top: 330px;
+
+	}
+	.lastbut {
+		width: 60%;
+	}
+	.last2 {
+		
+		font-size: .9em;
+	}
+	.last1 {
+		
+		font-size: .9em;
+	}
+
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.head1-md {
+		display: none;
+	}
+	.button1 {
+		display: none;
+	}
+	.logo-bg {
+		position: absolute;
+		width:50%;
+		height: 70px;
+		background-color: white;
+		padding-left: 10px;
+
+	}
+	.logo {
+		background-color: red;
+
+		width:100%;
+		
+		margin-right: auto;
+	}
+
+	.button3-bg {
+		
+		
+		top: 68px;
+		right: -15px;
+	}
+	.button2-bg {
+		width: 70px;
+		font-size: .7em;
+		height: 40px;
+		right: 75px;
+	}
+	.head1{
+		font-size: .75em;
+		left:-100px;
+		top:350px;
+	}
+
+	.head2 {
+		font-size: .8em;
+		width: 65%;
+		font-weight: bold;
+		left: -15px;
+		top:450px;
+
+	}
+	.lastbut {
+		width:70%;
+		top:520px;
+		left: 20px;
+	}
+	.last1, .last2 {
+		height: 35px;
+		font-size: .8em;
+
+	}
+	.last1 {
+		width: 50%;
+		padding: 2px;
+		padding-left: 5px;
+
+	}
+	.last2 {
+		padding-top: 2px;
+	}
+
+}
+@media (min-width: 375px) and (max-width: 424px){
+	.head1-md {
+		display: none;
+	}
+	.button1 {
+		display: none;
+	}
+	.logo-bg {
+		position: absolute;
+		width:50%;
+		height: 70px;
+		background-color: white;
+		padding-left: 10px;
+
+	}
+	.logo {
+		background-color: red;
+
+		width:100%;
+		
+		margin-right: auto;
+	}
+
+	.button3-bg {
+		
+		
+		top: 68px;
+		right: -15px;
+	}
+	.button2-bg {
+		width: 70px;
+		font-size: .7em;
+		height: 40px;
+		right: 75px;
+	}
+	.head1{
+		font-size: .68em;
+		left:-125px;
+		top:350px;
+	}
+
+	.head2 {
+		font-size: .8em;
+		width: 65%;
+		font-weight: bold;
+		left: -25px;
+		top:435px;
+
+	}
+	.lastbut {
+		width:65%;
+		top:520px;
+		left: 0px;
+	}
+	.last1, .last2 {
+		height: 35px;
+		font-size: .8em;
+
+	}
+	.last1 {
+		width: 50%;
+		padding: 2px;
+		padding-left: 5px;
+
+	}
+	.last2 {
+		padding-top: 2px;
+	}
+	}
+
+
+
+
+@media (max-width: 374px) {
+	.button1{
+		display: none;
+	}
+	.logo-bg {
+		position: absolute;
+		width:50%;
+		height: 70px;
+		background-color: white;
+		padding-left: 10px;
+
+	}
+	.logo {
+		background-color: red;
+
+		width:100%;
+		
+		margin-right: auto;
+	}
+
+	.button3-bg {
+		
+		
+		top: 68px;
+		right: -15px;
+	}
+	.button2-bg {
+		width: 70px;
+		font-size: .7em;
+		height: 40px;
+		right: 75px;
+	}
+	.head1{
+		display: none;
+		}
+	.head1-sd {
+		text-align: left;
+	font-size: .75em;
+	color:#b2e5eb;
+	font-family: 'Oxygen', sans-serif;
+	width:50%px;
+	height: 200px;
+	position: absolute;
+	
+	bottom: 150px;
+	left:25px;
+
+
+	}
+
+	.head2 {
+		display: none;
+		
+
+	}
+	.lastbut {
+		width:70%;
+		top:420px;
+		left: -7px;
+	}
+	.last1, .last2 {
+		height: 35px;
+		font-size: .8em;
+
+	}
+	.last1 {
+		width: 50%;
+		padding: 2px;
+		padding-left: 5px;
+
+
+	}
+	.last2 {
+		margin-left: -10px;
+		padding-top: 2px;
+	}
+	#bg{
+		height: 560px;
+	}
 
 }
