@@ -1,8 +1,10 @@
 body {
 	font-size: 16px;
-	color: #ff00;
+	background: url("images/jumbo1.jpg");
+	background-size: 100%; 
 	background-color: #e61c1c;
 	font-family: "Oxygen", sans serif;
+
 }
 
 #header-nav {
@@ -74,14 +76,18 @@ body {
 	margin-left: 2px;
 }
 #nav-list a span {
-	font-size: 1em
-	;
+	font-size: 1em;
+	
 
 	}
 
 
 /*Media queries*/
-
+@media (min-width: 1024px) and (max-width: 1399px) {
+	#nav-list a {
+		font-size: 1.2em;
+	}
+}
 @media (min-width: 1400px) {
 	.logoedit {
 		margin-left: -80px;
