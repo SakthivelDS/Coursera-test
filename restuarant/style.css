@@ -38,7 +38,6 @@ body {
 }
 #navlist a span:hover {
 	overflow: hidden;
-	width: 50px;
 	color: black;
 }
 
@@ -48,10 +47,146 @@ body {
 }
 #phone a {
 	text-align: right;
-	padding-bottom: 0;
+	padding-bottom: 0px;
 }
 #phone div {
 	color: blue;
 	text-align: right;
 	padding-right: 15px;
 }
+.navbar-header button.navbar-toggle {
+	margin-top: 27px;
+
+}
+.navbar-header button.navbar-toggle:focus {
+	background-color: black;
+
+
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid orange;
+}
+
+
+/*Media queries*/
+
+@media (min-width: 1400px) {
+	.logoedit {
+		margin-left: -80px;
+	}
+	#collapsable-nav {
+		margin-right: -80px;
+	}
+
+	#nav-list li {
+		padding-right: 20px;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.logoedit {
+		width:300px;
+	}
+	.logo {
+		width:80%;
+		height: 70px;
+		margin-top: 10px;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.logoedit {
+		width: 270px;
+	}
+	.logo {
+		width: 90%;
+		height: 70px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.logoedit {
+		width: 250px;
+	}
+	.logo {
+		width:90%;
+		height: 65px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+
+
+}
+@media (min-width: 320px) and (max-width: 374px) {
+	.logoedit {
+		width: 230px;
+	}
+	.logo {
+		width:90%;
+		height: 60px;
+		margin-top: 14px;
+		margin-left: 10px;	
+}
+}
+
+@media (min-width: 279px) and (max-width:319px) {
+	.logoedit {
+		width: 220px;
+	}
+	.logo {
+		width:80%;
+		height: 50px;
+		margin-top: 20px;
+		margin-left: auto;
+		padding-left: 10px;
+
+}
+
+}
+
+@media (max-width: 278px) {
+	.logoedit {
+		width: 215px;
+	}
+	.logo {
+		width:90%;
+		height: 50px;
+		margin-top: 20px;
+		margin-left: auto;
+		padding-left: 10px;
+
+}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
