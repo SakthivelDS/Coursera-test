@@ -97,7 +97,7 @@ body {
 	box-shadow: 0px 0px 10px  black;
 }
 
-.row span {
+#tiles span {
 	color: orange;
 	font-size: 1.4em;
 	font-weight: bold;
@@ -120,6 +120,39 @@ body {
  	background-position: center;
 
  }
+ .panel-footer {
+ 	box-shadow: 0 -1px 2px black;
+ 	margin-top: 30px;
+ 	padding-top: 35px;
+ 	padding-bottom: 30px;
+ 	background-color: #222;
+ 	border-top: 0;
+ 	color: grey;
+ }
+ footer span {
+ 	font-size: 1.2em;
+ }
+ .panel-footer div.row {
+ 	margin-bottom: 30px;
+ }
+
+ #hours, #address {
+ 	line-height: 1.8em;
+ }
+ #testimonials {
+ 	margin-top: 20px;
+
+ 	font-style: italic;
+ }
+ #address p {
+ 	color: #557c3e;
+ 	font-size: .9em;
+ 	line-height: 1.8;
+ }
+
+ #testimonials p:nth-child(2) {
+ 	margin-top: 25px;
+ }
 /*Media queries*/
 
 @media (min-width: 1440px) {
@@ -138,8 +171,8 @@ body {
 	}
 	#main-content {
 		width: 1400px;
-		height:700px;
-
+		height:970px;
+		
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -159,7 +192,7 @@ body {
 	#main-content {
 
 		width: 1290px;
-		height: 610px; 
+		height: 900px; 
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -179,7 +212,7 @@ body {
 	#main-content {
 
 		width: 1000px;
-		height: 610px; 
+		height: 1200px; 
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -205,7 +238,7 @@ body {
 	#main-content {
 
 		width: 750px;
-		height: 492px; 
+		height: 1045px; 
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -215,6 +248,14 @@ body {
 		height: 482px;
 		box-shadow: 0px 0px 50px black;
 		
+	}
+}
+@media (max-width: 767px) {
+	hr {
+		width: 60%;
+	}
+	footer {
+		text-align: center;
 	}
 }
 
@@ -231,7 +272,7 @@ body {
 	#main-content {
 
 		width: 430px;
-		height: 400px; 
+		height: 1220px; 
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -245,6 +286,13 @@ body {
 		margin-right: auto;
 		
 	}
+	.panel-footer {
+		text-align: center;
+	}
+	footer {
+		margin-right: -5px;
+	}
+	 
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -260,7 +308,7 @@ body {
 	#main-content {
 
 		width: 370px;
-		height: 270px; 
+		height: 930px; 
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -287,7 +335,7 @@ body {
 	#main-content {
 
 		width: 310px;
-		height: 270px; 
+		height: 920px; 
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -317,7 +365,7 @@ body {
 	#main-content {
 
 		width: 280px;
-		height: 195px; 
+		height: 850px; 
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -347,7 +395,7 @@ body {
 }
 	#main-content {
 		width: 270px;
-		height: 195px; 
+		height: 850px; 
 		margin-right: auto;
 		margin-left: auto;
 	}
