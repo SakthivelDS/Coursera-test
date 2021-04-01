@@ -56,6 +56,8 @@ body {
 	padding-right: 15px;
 }
 
+.navbar-header button {
+	padding-top: 10px;
 }
 .navbar-header button.navbar-toggle {
 	margin-top: 27px;
