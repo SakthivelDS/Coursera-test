@@ -153,6 +153,43 @@ body {
  #testimonials p:nth-child(2) {
  	margin-top: 25px;
  }
+/*Menucategories*/
+#menucat-title {
+	font-family: "Oxygen";
+	font-weight: bold;
+	font-size: 2.5em;
+	text-decoration-line: underline;
+}
+.category-tile {
+	text-decoration: none;
+	position: relative;
+	border: 1px solid black;
+	overflow: hidden;
+	margin: 0 auto 15px;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+.category-tile span {
+	color: white;
+	background-color: black;
+	opacity: .7;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.category-tile:hover {
+	box-shadow: 0 0px 10px  black;
+}
+#menucat-title {
+	margin-bottom: 50px;
+}
 /*Media queries*/
 
 @media (min-width: 1440px) {
@@ -304,6 +341,14 @@ body {
 		margin-right: auto;
 		
 	}
+	.col-xxs-12 {
+		width: 100%;
+		min-height: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+		float: left;
+		position: relative;
+	}
 		 
 }
 
@@ -333,6 +378,14 @@ body {
 		margin-right: auto;
 
 }
+.col-xxs-12 {
+		width: 100%;
+		min-height: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+		float: left;
+		position: relative;
+	}
 }
 @media (min-width: 320px) and (max-width: 374px) {
 	.logoedit {
@@ -360,6 +413,14 @@ body {
 		margin-right: auto;
 
 }
+.col-xxs-12 {
+		width: 100%;
+		min-height: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+		float: left;
+		position: relative;
+	}
 }
 
 @media (min-width: 279px) and (max-width:319px) {
@@ -390,6 +451,14 @@ body {
 		margin-right: auto;
 
 }
+.col-xxs-12 {
+		width: 100%;
+		min-height: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+		float: left;
+		position: relative;
+	}
 
 }
 
@@ -420,6 +489,14 @@ body {
 		margin-right: auto;
 
 }
+.col-xxs-12 {
+		width: 100%;
+		min-height: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+		float: left;
+		position: relative;
+	}
 	
 }
 @media (min-width: 425px) and (max-width: 767px) {
