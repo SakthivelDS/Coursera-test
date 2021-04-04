@@ -342,7 +342,7 @@ body {
 		
 	}
 	#menucat-title {
-		font-size: 1.8em;
+		font-size: 2em;
 	}
 	.category-tile {
 		
@@ -365,7 +365,7 @@ body {
 	#main-content {
 
 		width: 370px;
-		height: 930px; 
+		height: 2050px; 
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -380,6 +380,10 @@ body {
 }
 	#menucat-title {
 		font-size: 2em;
+	}
+	.category-tile {
+		width: 200px;
+		height: 200px;
 	}
 .col-xxs-12 {
 		width: 100%;
@@ -403,7 +407,7 @@ body {
 	#main-content {
 
 		width: 310px;
-		height: 920px; 
+		height: 2050px; 
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -444,7 +448,7 @@ body {
 	#main-content {
 
 		width: 280px;
-		height: 850px; 
+		height: 2080px; 
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -485,7 +489,7 @@ body {
 }
 	#main-content {
 		width: 270px;
-		height: 850px; 
+		height: 2100px; 
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -498,6 +502,9 @@ body {
 		margin-right: auto;
 
 }
+	#menucat-title {
+		font-size: 2em;
+	}
 .col-xxs-12 {
 		width: 100%;
 		min-height: 1px;
