@@ -1,0 +1,51 @@
+body {
+	font-family: "Oxygen";
+}
+#navigation-bar {
+	background-color: #879399;
+	border: 0;
+	border-radius: 0;
+	height: 80px;
+}
+#navigation-bar>.container {
+	margin-left: 0;
+}
+#brandname {
+	margin-top: 7px;
+	overflow: hidden;
+	width:600px;
+	height:50px;
+	font-size: 3em;
+	font-weight: bold;
+	margin-left: auto;
+	padding-left:auto;
+
+}
+#nav-list span{
+	border: 2px solid black;
+	height: 50px;
+	color: black;
+	border-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

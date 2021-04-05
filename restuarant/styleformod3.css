@@ -1,0 +1,214 @@
+body {
+	font-family: "kalam",cursive;
+	text-decoration: none;
+}
+
+#header-nav {
+	width: 100%;
+	background-color: grey;
+	border-radius: 0;
+	border: 3px solid black;
+}
+h1 {
+	font-weight: bold;
+	padding-left: 30px;
+}
+.icon-bar {
+	border: 1px solid black;
+
+}
+button{
+	border: 1px solid black;
+
+}
+button {
+	background-color: #606e78;
+}
+nav>.container {
+	width:100%;
+	margin: 0px;
+}
+button.navbar-toggle {
+	margin-top: -45px;
+	margin-bottom: 15px; 
+}
+
+nav ul li {
+	text-align: center;
+	font-size: 1.5em;
+	background-color: grey;
+	border-bottom: 1px solid white;		
+	color: black;																																																							;
+}
+#nav-list a {
+	text-decoration: none;
+}
+#nav-list {
+	margin-top: 2px;
+	margin-bottom: -2px;
+
+}
+nav ul a li:hover{
+	background-color: #606e78;
+}
+#Menu {
+	padding-top: 20px;
+	font-size: 50px;
+}
+
+#box1, #box2, #box3{
+	width:100%;
+	margin-top: 50px;
+	background-color: grey;
+	height: 400px;
+	overflow: hidden;
+	border: 2px solid black;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+#boxes h4 {
+	font-size: 2em;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+#boxes p {
+	padding:0 5px 5px 5px;
+	font-size: 1.5em;
+	font-weight: bold;
+	
+}
+#boxes a {
+	text-decoration: none;
+	color:black;
+}
+#boxes a:hover {
+	text-shadow: 0 1px 1px black;
+}
+
+/********Media queries*********/
+@media (max-width: 767px) {
+	h1 {
+	padding-left: 80px;
+}
+}
+@media (min-width: 1440px) {
+	#boxcont {
+		width: 98%;
+		height: 400px;
+	}
+}
+@media (min-width: 1201px) and (max-width: 1439px) {
+	
+	#boxes p {
+		font-size: 21px;
+	}
+}	
+
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	
+	#boxes p {
+		font-size: 19px;
+	}
+}
+#box1, #box2, #box3 {
+
+	height: 500px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#boxcont {
+		width: 98%;
+	}
+
+	#boxes p{
+		font-size: 18.5px;
+	}
+	#box3 {
+		height: 220px;
+	}
+	#box1, #box2 {
+		height: 400px;
+	}
+}
+@media (min-width: 850px) and (max-width:991px) {
+	#box1, #box2 {
+		height: 350px;
+	}
+}
+@media (min-width: 425px) and (max-width: 467px) {
+	#boxes p{
+		font-size: 18px;
+	}
+	#box1, #box2, #box3 {
+		height: 350px;
+	}
+}
+@media (min-width: 468px) and (max-width: 577px) {
+	#boxes p{
+		font-size: 18px;
+	}
+	#box1, #box2, #box3 {
+		height: 350px;
+	}
+}
+@media (min-width: 578px) and (max-width: 768px) {
+	#boxes p{
+		font-size: 18px;
+	}
+	#box1, #box2, #box3 {
+		height: 280px;
+	}
+}
+@media (min-width: 375px) and (max-width: 425px) {
+	#boxes p{
+		font-size: 18px;
+	}
+	#box1, #box2, #box3 {
+		height: 400px;
+	}
+	h1 {
+		padding-left: 40px;
+	}
+	#Menu {
+		
+		margin-bottom:-20px;
+		margin-top: -10px;
+	}
+}
+@media (min-width: 320px) and (max-width: 374px) {
+	#boxes p{
+		font-size: 18px;
+	}
+	#box1, #box2, #box3 {
+		height: 480px;
+	}
+	h1 {
+		padding-left: 30px;
+	}
+	#Menu {
+		font-size: 40px;
+		margin-bottom:-30px;
+		margin-top: -20px;
+	}
+}
+@media (max-width: 319px) {
+	#boxes p{
+		font-size: 18px;
+	}
+	#box1, #box2, #box3 {
+		height: 550px;
+	}
+	h1 {
+		padding-left: 20px;
+	}
+	#Menu {
+		font-size: 40px;
+		margin-bottom:-30px;
+		margin-top: -20px;
+	}
+}
