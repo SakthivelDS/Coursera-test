@@ -45,8 +45,11 @@ nav ul li {
 }
 #nav-list {
 	margin-top: 2px;
-	margin-bottom: -2px;
+	margin-bottom: -1px;
 
+}
+#Sushi {
+	border-bottom: 0px;
 }
 nav ul a li:hover{
 	background-color: #606e78;
@@ -55,6 +58,7 @@ nav ul a li:hover{
 	padding-top: 20px;
 	font-size: 50px;
 }
+
 
 #box1, #box2, #box3{
 	width:100%;
@@ -86,6 +90,9 @@ nav ul a li:hover{
 }
 #boxes a:hover {
 	text-shadow: 0 1px 1px black;
+}
+#boxcont {
+	margin-bottom: 50px;
 }
 
 /********Media queries*********/
