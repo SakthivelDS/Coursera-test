@@ -1,0 +1,144 @@
+function feedback(type, title, msg) {
+  toastr.options = {
+  closeButton: true,
+  progressBar: true,
+  showMethod: 'slideDown',
+  timeOut: 4000
+    };
+  switch(type) {
+    case 1: toastr.success(msg, title); break;
+    case 2: toastr.error(msg, title); break;
+    case 3: toastr.warning(msg, title); break;
+  }
+}
+
+function swal_feedback(type, title, msg, btn = false) {
+  var t;
+  switch(type) {
+    case 1: t = 'success'; break;
+    case 2: t = 'error'; break;
+    default: t = 'info';
+  }
+  swal({
+    title: title,
+    type: t,
+    text: msg,
+    confirmButton: false
+  });  
+  if(btn) {
+	  swal.disableButtons();
+  }
+}
+
+/**Datatable search clear API */
+jQuery.fn.dataTableExt.oApi.fnFilterClear  = function ( oSettings )
+{
+    var i, iLen;
+ 
+    /* Remove global filter */
+    oSettings.oPreviousSearch.sSearch = "";
+ 
+    /* Remove the text of the global filter in the input boxes */
+    if ( typeof oSettings.aanFeatures.f != 'undefined' )
+    {
+        var n = oSettings.aanFeatures.f;
+        for ( i=0, iLen=n.length ; i<iLen ; i++ )
+        {
+            $('input', n[i]).val( '' );
+        }
+    }
+ 
+    /* Remove the search text for the column filters - NOTE - if you have input boxes for these
+     * filters, these will need to be reset
+     */
+    for ( i=0, iLen=oSettings.aoPreSearchCols.length ; i<iLen ; i++ )
+    {
+        oSettings.aoPreSearchCols[i].sSearch = "";
+    }
+ 
+    /* Redraw */
+    oSettings.oApi._fnReDraw( oSettings );
+};
+
+(function($) {
+    $.fn.bootstrapValidator.i18n.greater = $.extend($.fn.bootstrapValidator.i18n.greater || {}, {
+        'default': 'Please enter the same value'
+    });
+
+    $.fn.bootstrapValidator.validators.greater = {
+        html5Attributes: {
+            message: 'message',
+            field: 'field'
+        },
+
+        /**
+         * Check if input value greater than value of particular one
+         *
+         * @param {BootstrapValidator} validator The validator plugin instance
+         * @param {jQuery} $field Field element
+         * @param {Object} options Consists of the following key:
+         * - field: The name of field that will be used to compare with current one
+         * @returns {Boolean}
+         */
+        validate: function(validator, $field, options) {
+            var value = $field.val();
+            if (value === '') {
+                return true;
+            }
+
+            var compareWith = validator.getFieldElements(options.field);
+            if (compareWith === null || compareWith.length === 0) {
+                return true;
+            }
+
+            if (value > compareWith.val()) {
+                validator.updateStatus(options.field, validator.STATUS_VALID, 'greater');
+                return true;
+            } else {
+                return false;
+            }
+        }
+    };
+}(window.jQuery));
+
+(function($) {
+    $.fn.bootstrapValidator.i18n.lesser = $.extend($.fn.bootstrapValidator.i18n.lesser || {}, {
+        'default': 'Please enter the same value'
+    });
+
+    $.fn.bootstrapValidator.validators.lesser = {
+        html5Attributes: {
+            message: 'message',
+            field: 'field'
+        },
+
+        /**
+         * Check if input value lesser than value of particular one
+         *
+         * @param {BootstrapValidator} validator The validator plugin instance
+         * @param {jQuery} $field Field element
+         * @param {Object} options Consists of the following key:
+         * - field: The name of field that will be used to compare with current one
+         * @returns {Boolean}
+         */
+        validate: function(validator, $field, options) {
+            var value = $field.val();
+            if (value === '') {
+                return true;
+            }
+
+            var compareWith = validator.getFieldElements(options.field);
+            if (compareWith === null || compareWith.length === 0) {
+                return true;
+            }
+
+            if (value < compareWith.val()) {
+                validator.updateStatus(options.field, validator.STATUS_VALID, 'lesser');
+                return true;
+            } else {
+                return false;
+            }
+        }
+    };
+}(window.jQuery));
+

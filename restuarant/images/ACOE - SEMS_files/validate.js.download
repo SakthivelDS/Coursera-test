@@ -1,0 +1,155 @@
+//Filter to allow values A, a and 0 - 100
+$(document).on('keydown', '.custom-num-filter', function(e) {
+    //var inputValue = e.which;
+    // Allow: backspace, delete, tab, escape, enter
+    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13]) !== -1 ||
+         // Allow: Ctrl+A
+        (e.keyCode == 65 && e.ctrlKey === true) ||
+         // Allow: Ctrl+C
+        (e.keyCode == 67 && e.ctrlKey === true) ||
+         // Allow: Ctrl+X
+        (e.keyCode == 88 && e.ctrlKey === true) ||
+        // Allow: Shift +2 for @
+        //(e.keyCode == 50 && e.shiftKey === true) ||
+         // Allow: home, end, left, right
+        (e.keyCode >= 35 && e.keyCode <= 39)) {
+         // let it happen, don't do anything
+         return;
+    }
+
+    if(e.keyCode > 47 && e.keyCode < 58)
+        var keyCode = e.keyCode;
+    else if(e.keyCode > 95 && e.keyCode < 106)
+        var keyCode = e.keyCode - 48;
+
+    var x = $(this).val();
+    var y = String.fromCharCode(keyCode);    
+    if(x == '0' && y == '0') {
+        e.preventDefault();
+    }
+    if(x == 'a' || x == 'A') {
+        e.preventDefault();
+        return;
+    } else {
+        var i = parseInt(x);
+        if( keyCode == 65 && i < 101) {
+            e.preventDefault();
+        }
+    }
+
+    x+= String.fromCharCode(keyCode);
+
+    var i = parseInt(x);
+    if(x>100) {
+        e.preventDefault();
+    }
+
+    if(e.keyCode == 65) {
+        //$(this).val(String.fromCharCode(e.keyCode));
+        $(this).val('A');        
+        e.preventDefault();
+    }
+    else if (e.shiftKey || (e.keyCode < 48 || e.keyCode > 57) && (e.keyCode < 96 || e.keyCode > 105)) {
+        e.preventDefault();
+    }
+
+    x = $(this).val();
+    if(x == '0') {
+        $(this).val(String.fromCharCode(keyCode));
+        e.preventDefault();
+    }
+});
+
+//Filter to allow values 0 - 100
+$(document).on('keydown', '.range-filter', function(e) {
+    //var inputValue = e.which;
+    // Allow: backspace, delete, tab, escape, enter
+    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13]) !== -1 ||
+         // Allow: Ctrl+A
+        (e.keyCode == 65 && e.ctrlKey === true) ||
+         // Allow: Ctrl+C
+        (e.keyCode == 67 && e.ctrlKey === true) ||
+         // Allow: Ctrl+X
+        (e.keyCode == 88 && e.ctrlKey === true) ||
+        // Allow: Shift +2 for @
+        //(e.keyCode == 50 && e.shiftKey === true) ||
+         // Allow: home, end, left, right
+        (e.keyCode >= 35 && e.keyCode <= 39)) {
+         // let it happen, don't do anything
+         return;
+    }
+
+    if(e.keyCode > 47 && e.keyCode < 58)
+        var keyCode = e.keyCode;
+    else if(e.keyCode > 95 && e.keyCode < 106)
+        var keyCode = e.keyCode - 48;
+
+    var x = $(this).val();
+    var y = String.fromCharCode(keyCode);    
+    if(x == '0' && y == '0')
+        e.preventDefault();
+
+    x+= String.fromCharCode(keyCode);
+
+    var i = parseInt(x);
+    if(x>100) {
+        e.preventDefault();
+    }
+
+    else if (e.shiftKey || (e.keyCode < 48 || e.keyCode > 57) && (e.keyCode < 96 || e.keyCode > 105)) {
+        e.preventDefault();
+    }
+
+    x = $(this).val();
+    if(x == '0') {
+        $(this).val(String.fromCharCode(keyCode));
+        e.preventDefault();
+    }
+});
+
+
+$(document).on('keydown', '.project-filter', function(e) {
+    //var inputValue = e.which;
+    // Allow: backspace, delete, tab, escape, enter
+    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13]) !== -1 ||
+         // Allow: Ctrl+A
+        (e.keyCode == 65 && e.ctrlKey === true) ||
+         // Allow: Ctrl+C
+        (e.keyCode == 67 && e.ctrlKey === true) ||
+         // Allow: Ctrl+X
+        (e.keyCode == 88 && e.ctrlKey === true) ||
+        // Allow: Shift +2 for @
+        //(e.keyCode == 50 && e.shiftKey === true) ||
+         // Allow: home, end, left, right
+        (e.keyCode >= 35 && e.keyCode <= 39)) {
+         // let it happen, don't do anything
+         return;
+    }
+
+    if(e.keyCode > 47 && e.keyCode < 58)
+        var keyCode = e.keyCode;
+    else if(e.keyCode > 95 && e.keyCode < 106)
+        var keyCode = e.keyCode - 48;
+
+    var x = $(this).val();
+    var y = String.fromCharCode(keyCode);    
+    if(x == '0' && y == '0')
+        e.preventDefault();
+
+    x+= String.fromCharCode(keyCode);
+
+    var i = parseInt(x);
+    if(x>1000) {
+        e.preventDefault();
+    }
+
+    else if (e.shiftKey || (e.keyCode < 48 || e.keyCode > 57) && (e.keyCode < 96 || e.keyCode > 105)) {
+        e.preventDefault();
+    }
+
+    x = $(this).val();
+    if(x == '0') {
+        $(this).val(String.fromCharCode(keyCode));
+        e.preventDefault();
+    }
+});
